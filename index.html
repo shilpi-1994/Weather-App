@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Weather App API</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <style>
+        body {
+            margin: 70px auto;
+            text-align: center;
+        }
+        #cityName{
+            margin-bottom: 30px;
+        }
+        table {
+            text-align: left;
+            margin: 30px auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+    <body>
+        <div>
+            <h1>Weather Information</h1>
+            <p>Enter the city :</p>
+            <input type="text" id="cityName" value="">
+            <div id="errorMessage"></div>
+            <br/>
+            <button id="getWeatherData">Get Weather</button>
+            <button id="clearWeatherData">Reset</button>
+            <div id="weatherData"></div>
+
+            <div id="getMoreWeatherInfo" style="display: none">
+                <button id="getWeatherData">Yes</button>
+                <button id="cancelRequest">No</button>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="weatherApp.js"></script>
+    </body>
+</html>
